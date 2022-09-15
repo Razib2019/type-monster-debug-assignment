@@ -6,10 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <!-- Bootstrap CDN Link Here  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- Frequently Asked Questions Section Start From Here -->
+    <section class="container mt-5">
+        <h1 class="text-center fw-semibold">Frequently Asked Questions</h1>
+        <div class="mt-3">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>What's The Difference Between Local And Session Storage ?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Flexbox:</strong> The Flexible Box Layout Module, makes it easier to design
+                            flexible responsive layout structure without using float or positioning. <br>
+                            <strong>Key Points:</strong><strong> (i)</strong> One Dimensional <strong>(ii)</strong>
+                            Focuses on content flow content first <strong>(iii)</strong> Width(or height) of flex
+                            items are
+                            determined by the content of the item <strong>(iv)</strong> Spacing and aligning items
+                            are flexible
+                            <br><br>
+                            <strong>Grid-Layout:</strong> The CSS Grid Layout Module offers a grid-based layout
+                            system,
+                            with rows and columns, making it easier to design web pages without having to use floats
+                            and positioning.
+                            <br>
+                            <strong>Key Points:</strong>
+                            <strong>(i)</strong> Multi Dimensional <strong>(ii)</strong>
+                            Focuses on content placement layout first <strong>(iii)</strong> Provides a
+                            mechanism to
+                            divide available viewport for layout into columns and rows <strong>(iv)</strong>
+                            Each
+                            item can be positioned anywhere in a grid cell
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>What's The Difference Between Global Scope And Block Scope ?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Bootstrap:</strong> Bootstrap comes with a set of pre-styled responsive,
+                            mobile-first components that possess a definite UI kit. <br>
+                            <strong>Key Points:</strong><strong> (i)</strong> Sites created using Bootstrap follow
+                            the generic pattern that makes them look identical. <strong>(ii)</strong>
+                            Websites created with Bootstraps are known for their responsiveness and flawless design,
+                            but the looks are generic and similar. <strong>(iii)</strong> Bootstrap is efficient and
+                            saves a lot of time. It has been around for more than nine years and being the most
+                            popular CSS Framework, it has a large community of developers, forums, tools, and so on.
+                            <strong>(iv)</strong> Spotify, Twitter, and Lyft are some of the famous companies that
+                            use Bootstrap.
+                            <br><br>
+                            <strong>Tailwind:</strong> Tailwind CSS uses a set of utility classes to create a neat
+                            UI with more flexibility and uniqueness.
+                            <br>
+                            <strong>Key Points:</strong><strong> (i)</strong> Tailwind offers predesigned widgets to
+                            build a site from scratch with fast UI development. <strong>(ii)</strong>
+                            Websites created using Tailwind CSS are much more customizable. <strong>(iii)</strong>
+                            Tailwind CSS is relatively newer, and there is still much room to grow in terms of its
+                            community, however, it is growing day by day, and the number of users, references,
+                            tools, and websites related to it are also increasing.
+                            <strong>(iv)</strong> Tailwind CSS is used by BlaBlaCar, Exyplis, and Bazzite.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>What's The JavaScript Event Loop And How It's Work ?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CSS Box Model:</strong> In CSS, the term "box model" is used when talking about
+                            design and layout. <br> <br>
+                            The CSS box model is essentially a box that wraps around every HTML element. It consists
+                            of: margins, borders, padding, and the actual content (height And width).<br> <br>
+                            <strong>All HTML elements can be considered as boxes.</strong> <br> <br>
+                            <strong>Explanation of the different parts:</strong> <br> <br>
+                            <strong>Content -</strong> The content of the box, where text and images appear <br>
+                            <strong>Padding -</strong> Clears an area around the content. The padding is transparent
+                            <br>
+                            <strong>Border -</strong> A border that goes around the padding and content <br>
+                            <strong>Margin -</strong> Clears an area outside the border. The margin is transparent
+                            <br> <br>
+                            The box model allows us to add a border around elements, and to define space between
+                            elements.
 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>How many ways we can get undefined ?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>8 Ways to get undefined:</strong> We can get undefined from the 8 reasons below:
+                            <br> <br>
+                            <strong>1)</strong>
+                            Variable that is not initialized will give undefined. <br>
+                            <strong>2)</strong>
+                            Function with no return will give undefined. <br>
+                            <strong>3)</strong>
+                            Parameter that is not passed will be undefined. <br>
+                            <strong>4)</strong>
+                            If return has nothing on the right side then will return undefined. <br>
+                            <strong>5)</strong>
+                            Property that doesn't exists on an object will give result undefined. <br>
+                            <strong>6)</strong>
+                            Accessing array elements outside of the index range will give result undefined. <br>
+                            <strong>7)</strong>
+                            Deleting an element inside an array will give undefined. <br>
+                            <strong>8)</strong>
+                            Set a value directly to undefined. <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Frequently Asked Questions Section End Here -->
+    <!-- Bootstrap JavaScript Link Here  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
