@@ -55,27 +55,35 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>Bootstrap:</strong> Bootstrap comes with a set of pre-styled responsive,
-                            mobile-first components that possess a definite UI kit. <br>
-                            <strong>Key Points:</strong><strong> (i)</strong> Sites created using Bootstrap follow
-                            the generic pattern that makes them look identical. <strong>(ii)</strong>
-                            Websites created with Bootstraps are known for their responsiveness and flawless design,
-                            but the looks are generic and similar. <strong>(iii)</strong> Bootstrap is efficient and
-                            saves a lot of time. It has been around for more than nine years and being the most
-                            popular CSS Framework, it has a large community of developers, forums, tools, and so on.
-                            <strong>(iv)</strong> Spotify, Twitter, and Lyft are some of the famous companies that
-                            use Bootstrap.
+                            <strong>Global Scope:</strong> A variable declared at the top of a program or outside of a
+                            function is considered a global scope variable. <br>
+
+                            Let's see an example of a global scope variable. <br><br>
+                            // program to print a text <br>
+
+                            let a = "hello";<br>
+
+                            function greet () {<br>
+                            console.log(a);<br>
+                            }<br>
+
+                            greet(); // hello
+
                             <br><br>
-                            <strong>Tailwind:</strong> Tailwind CSS uses a set of utility classes to create a neat
-                            UI with more flexibility and uniqueness.
-                            <br>
-                            <strong>Key Points:</strong><strong> (i)</strong> Tailwind offers predesigned widgets to
-                            build a site from scratch with fast UI development. <strong>(ii)</strong>
-                            Websites created using Tailwind CSS are much more customizable. <strong>(iii)</strong>
-                            Tailwind CSS is relatively newer, and there is still much room to grow in terms of its
-                            community, however, it is growing day by day, and the number of users, references,
-                            tools, and websites related to it are also increasing.
-                            <strong>(iv)</strong> Tailwind CSS is used by BlaBlaCar, Exyplis, and Bazzite.
+
+                            <strong>Block Scope:</strong> Block scopes are what you get when you use if statements, for
+                            statements, and the like. You can also use them stand-alone with a simple begin-end curly
+                            braces {}, not to be confused with empty object literals. <br><br>
+
+                            var a = {} // empty object literal <br><br>
+
+                            { var a } // undefined object in a block scope <br><br>
+
+                            if (3 == '3') {
+                            // block scope for the if statement
+                            }
+
+
                         </div>
                     </div>
                 </div>
