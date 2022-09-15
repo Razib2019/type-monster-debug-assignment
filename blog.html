@@ -94,21 +94,48 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>CSS Box Model:</strong> In CSS, the term "box model" is used when talking about
-                            design and layout. <br> <br>
-                            The CSS box model is essentially a box that wraps around every HTML element. It consists
-                            of: margins, borders, padding, and the actual content (height And width).<br> <br>
-                            <strong>All HTML elements can be considered as boxes.</strong> <br> <br>
-                            <strong>Explanation of the different parts:</strong> <br> <br>
-                            <strong>Content -</strong> The content of the box, where text and images appear <br>
-                            <strong>Padding -</strong> Clears an area around the content. The padding is transparent
-                            <br>
-                            <strong>Border -</strong> A border that goes around the padding and content <br>
-                            <strong>Margin -</strong> Clears an area outside the border. The margin is transparent
-                            <br> <br>
-                            The box model allows us to add a border around elements, and to define space between
-                            elements.
+                            <strong>Event Loop:</strong> We know,JavaScript is a single Threaded Language and being
+                            single Threaded it's work synchronous way. But after being single Threaded it's also works
+                            asynchronous way with the help of Browser and Event Loop. <br> <br>
 
+                            <strong>Event Loop Work:</strong> Event loop is a mechanism that allows JavaScript to
+                            perform
+                            non-blocking operations. When an asynchronous task is started, the event loop will start
+                            running. Once the task is completed, the event loop will again check for any other tasks
+                            that need to be performed. <br><br>
+
+                            <strong>As example: </strong> We asume that we take 3 variable and console them one by one.
+                            Variable 3 are like: <br><br>
+                            const first= 10; <br>
+                            const second = 20;<br>
+                            const third= 30;<br> <br>
+
+                            console.log(first); <br><br>
+
+                            setTimeout(() => { <br>
+                            console.log(second); <br>
+                            },500); <br><br>
+
+                            console.log(third);<br> <br>
+
+                            Here, If we run the code then we will see that in the console will be print like below:
+                            <br><br>
+                            console: <br>
+                            10 <br>
+                            30 <br>
+                            20 <br> <br>
+
+                            So, why 30 is printed or console before 20 ? That's the question right ? <br>
+                            when we set
+                            setTimeout() function for the second variable then it's being synchronous to asynchronous.
+                            we know javaScript first check the heap or memory allowcation data synchronous or not when
+                            it's goes to stack and if it's synchronous then print or console it. <br><br>
+                            if it's asynchronous then it's not console. next synchronous data will be console. with
+                            the help of Browser API like (DOM, AJax
+                            etc) asynchronous data will be work and browser send them callback queue and the event loop
+                            check stack is empty or not. if all synchronous work done and stack is empty then with the
+                            help of event loop from callback queue to stack data will transfar and then the data will
+                            console.
                         </div>
                     </div>
                 </div>
